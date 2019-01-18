@@ -1,0 +1,50 @@
+
+
+import Tkinter as tk
+from Tkinter import *
+
+gui = tk.Tk()
+gui.geometry("400x400")
+gui.title("Login page")
+
+class loginin:
+    
+    
+    def tree(self):
+       
+        self.EMAIL_ADDRESS=e.get()
+        self.PASSWORD=f.get()
+        self.id=self.EMAIL_ADDRESS
+        self.passw=self.PASSWORD
+        self.a="ggg"
+       
+       
+
+
+
+
+a = tk.Label(gui ,text="username")
+a.grid(row=0,column = 0)
+b = tk.Label(gui ,text="password")
+b.grid(row=1,column=0)
+#b.config('show="**"')
+
+
+e = tk.Entry()
+e.grid(row=0,column=1)
+f = tk.Entry()
+f.grid(row=1,column=1)
+        
+l=loginin()
+l.tree()
+print(l.a)
+print(l.id)
+print(l.passw)
+
+     
+ButtonSubmit = tk.Button(gui, text ="Login",command = l.tree)
+ButtonSubmit.grid(row=2, column=1,sticky=W)
+
+
+
+gui.mainloop()
